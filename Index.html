@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mission: Snow Wars & Paintball Adventures!</title>
+  <style>
+    :root {
+      --bg1: #ff80bf;
+      --bg2: #7dd3fc;
+      --bg3: #fdf2f8;
+      --accent: #ff7ee2;
+      --text: #fff0fa;
+      --soft: #ffe4fa;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2), var(--bg3));
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease infinite;
+      color: var(--text);
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      perspective: 1000px;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border: 2px solid rgba(255,255,255,0.2);
+      width: 760px;
+      max-width: 95%;
+      padding: 28px;
+      border-radius: 20px;
+      box-shadow: 0 8px 50px rgba(255, 0, 149, 0.4);
+      transform-style: preserve-3d;
+      transform: rotateY(5deg) rotateX(3deg);
+      animation: float 6s ease-in-out infinite alternate;
+      backdrop-filter: blur(15px);
+    }
+
+    @keyframes float {
+      from { transform: rotateY(5deg) rotateX(3deg) translateY(0); }
+      to { transform: rotateY(-5deg) rotateX(-3deg) translateY(-10px); }
+    }
+
+    .icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 14px;
+      background: linear-gradient(145deg, #ff9ae0, #ff5ecf);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      box-shadow: 0 6px 20px rgba(255, 100, 200, 0.5);
+    }
+
+    h1 { font-size: 26px; margin: 0 0 8px 0; }
+    p.lead { margin: 0 0 14px 0; color: var(--soft); font-size: 15px; }
+    .content { margin-top: 20px; line-height: 1.6; }
+    .cute { font-weight: 700; color: #fff; text-shadow: 0 0 10px #ff99e6; }
+    ul { margin-left: 20px; }
+
+    .btn {
+      background: linear-gradient(90deg, #ff7ee2, #ffb8f9);
+      color: #3b0035;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.07) rotate(-2deg);
+      box-shadow: 0 0 20px #ff9ae0;
+    }
+
+    .small { font-size: 13px; color: var(--soft); }
+    .footer { margin-top: 20px; text-align: right; color: var(--soft); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <div class="header" style="display:flex;gap:16px;align-items:center;">
+      <div class="icon">💥</div>
+      <div>
+        <h1>🚀 Mission Proposal: Snow Wars & Paintball Adventures!</h1>
+        <p class="lead">To: <span class="cute">The Legendary Kalash Whisperer</span> — the world needs your tactical brilliance!</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <p>Hey there, Commander Fluffy 👋,</p>
+      <p>How about we <span class="cute">travel the world together</span>, join epic <strong>snow wars</strong> and chaotic paintball battles (no casualties, only laughter 🫶), and — if I’m worthy — you teach me the <em>ancient sacred art</em> of Kalashnikov assembly? (Just for science 🔧💖)</p>
+
+      <p>Here’s the top-secret plan:</p>
+      <ul>
+        <li>Day 1: Laugh at our boots sinking in snow ❄️</li>
+        <li>Day 2: Paintball. Team chaos vs. logic. Spoiler: chaos wins.</li>
+        <li>Day 3: Training session — you disassemble, I nod wisely pretending to get it.</li>
+      </ul>
+
+      <p>Disclaimer: 100% for fun, adventure, and learning. No real weapons, just legendary friendship and ridiculous skill exchange 💫</p>
+
+      <div style="margin-top:20px">
+        <a class="btn" href="https://t.me/F007BR">Join the Mission 💌</a>
+        <div class="small" style="margin-top:6px">or text me there — I’ll be waiting with snow goggles on 🥽</div>
+      </div>
+    </div>
+
+    <div class="footer">With love, caffeine, and slightly questionable plans —<br><strong>You (a.k.a. Recruit #1 Felipe)</strong></div>
+  </article>
+</body>
+</html>
